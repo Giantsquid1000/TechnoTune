@@ -6,15 +6,11 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 @app.route('/')
-def hello_world():
-    return render_template('template.html')
-
-@app.route('/home')
-def loginPage():
+def homePage():
     return render_template('home.html')
 
 @app.route('/user')
-def loginPage():
+def userPage():
     return render_template('user.html')
 
 @app.route('/login')
