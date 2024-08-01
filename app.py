@@ -16,3 +16,7 @@ def userPage():
 @app.route('/login')
 def loginPage():
     return render_template('login.html', showNavbar=False)
+
+@app.route('/signup')
+def signupPage():
+    return render_template('login.html', showNavbar=False)
