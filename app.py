@@ -15,4 +15,4 @@ def userPage():
 
 @app.route('/login')
 def loginPage():
-    return render_template('login.html')
+    return render_template('login.html', showNavbar=False)
