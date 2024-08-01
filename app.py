@@ -9,6 +9,6 @@ if __name__ == '__main__':
 def hello_world():
     return render_template('template.html')
 
-@app.route('/home')
-def hello_home():
-    return 'Hello, Home!'
+@app.route('/login')
+def loginPage():
+    return render_template('login.html')
