@@ -5,6 +5,9 @@ body{
 
 .loginDiv{
     position:absolute;
-    align-content:center;
     background-color:rgb(208, 127, 127);
+    width:40%;
+    height:20%;
+    margin:2%;
+    padding:1%;
 }
