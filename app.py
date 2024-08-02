@@ -22,6 +22,9 @@ def loginPage():
         username = request.form["username"]
         password = request.form["password"]
         if username == myUsername and password == myPassword:
+            return render_template('home.html')
+        else:
+            return render_template("login.html")
 
 
 @app.route('/signup')
