@@ -4,12 +4,13 @@ body{
 }
 
 .loginDiv{
-    position:absolute;
-    background-color:rgb(208, 127, 127);
+    background-color:pink;
+    border: 3px ridge red;
     width:40%;
-    height:20%;
-    margin:2%;
+    height:40%;
     padding:1%;
-    display:flex;
-    justify-content: center;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
