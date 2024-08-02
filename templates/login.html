@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<div class="loginDiv" method="POST" action="{{ url_for('loginPage') }}">
+<div class="loginDiv">
     <p class="text-center h3 m-1"> Login </p>
-    <form>
+    <form method="POST" action="{{ url_for('loginPage') }}">
         <div class="form-group m-1">
             <label for="exampleInputEmail1">Username</label>
             <input type="text" class="form-control" id="input-username" name="username" placeholder="Enter email">

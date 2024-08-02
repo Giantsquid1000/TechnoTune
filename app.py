@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, redirect, session, request
 
 app = Flask(__name__)
 
@@ -13,19 +13,20 @@ def homePage():
 def userPage():
     return render_template('user.html')
 
-myUsername = "giantsquid750@gmail.com"
+myUsername = "giantsquid750"
 myPassword = "giantsquidspassword"
 
 @app.route('/login')
 def loginPage():
-    return render_template("login.html")
     if request.method == "POST":
         username = request.form["username"]
         password = request.form["password"]
         if username == myUsername and password == myPassword:
             return render_template('home.html')
         else:
-            return render_template("login.html")
+            return render_template("user.html")
+    else:
+        return render_template('login.html', showNavbar=False)
 
 @app.route('/signup')
 def signupPage():
