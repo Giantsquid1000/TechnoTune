@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div class="loginDiv">
+<div class="loginDiv" method="POST" action="{{ url_for('loginPage') }}">
     <p class="text-center h3 m-1"> Login </p>
     <form>
         <div class="form-group m-1">

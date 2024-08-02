@@ -13,6 +13,9 @@ def homePage():
 def userPage():
     return render_template('user.html')
 
+myUsername = "giantsquid750@gmail.com"
+myPassword = "giantsquidspassword"
+
 @app.route('/login')
 def loginPage():
     return render_template('login.html', showNavbar=False)
