@@ -18,6 +18,7 @@ myPassword = "giantsquidspassword"
 
 @app.route('/login')
 def loginPage():
+    return render_template("login.html")
     if request.method == "POST":
         username = request.form["username"]
         password = request.form["password"]
@@ -25,7 +26,6 @@ def loginPage():
             return render_template('home.html')
         else:
             return render_template("login.html")
-
 
 @app.route('/signup')
 def signupPage():
