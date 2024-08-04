@@ -26,7 +26,7 @@ def loginPage():
         else:
             return render_template("user.html")
     else:
-        return render_template('login.html', showNavbar=False)
+        return render_template('lon.html', showNavbar=False)
 
 @app.route('/signup')
 def signupPage():
