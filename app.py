@@ -28,7 +28,7 @@ def loginPage():
     else:
         return render_template('login.html', showNavbar=False)
 
-@app.route('/signup')
+@app.route('/signup', methods=["GET", "POST"])
 def signupPage():
     if request.method == "POST":
         username = request.form["newUsername"]
