@@ -16,7 +16,7 @@ def userPage():
 myUsername = "giantsquid750"
 myPassword = "giantsquidspassword"
 
-@app.route('/login')
+@app.route('/login', methods=["GET", "POST"])
 def loginPage():
     if request.method == "POST":
         username = request.form["username"]
